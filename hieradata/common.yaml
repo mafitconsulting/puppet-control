@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 profile::base::ntp_server:
  - 0.ubuntu.pool.ntp.org
  - 1.ubuntu.pool.ntp.org
@@ -6,3 +7,6 @@ profile::base::ntp_server:
  - 3.ubuntu.pool.ntp.org
 profile::apache::default_vhost: false
 
+=======
+message: "This node is using common data"
+>>>>>>> 728f736f889ed3722e04d2045bfe0597d6fdfd74
