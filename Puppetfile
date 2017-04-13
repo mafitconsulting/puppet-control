@@ -9,6 +9,7 @@ mod "puppet/selinux",          '0.8.0'
 mod "puppetlabs/apt",          '2.3.0'
 mod "puppetlabs/epel",         '1.2.2'
 mod "garethr/docker",          '5.3.0'
+mod "puppetlabs/apache",       '1.11.0' 
 
 
 
@@ -32,8 +33,8 @@ mod 'ntp',
 
 mod 'role',
   :git => 'https://github.com/mafitconsulting/puppet-role.git',
-  :ref => 'development'
+  :ref => 'master'
 
 mod 'profile',
   :git => 'https://github.com/mafitconsulting/puppet-profile.git',
-  :ref => 'development'
+  :ref => 'master'
