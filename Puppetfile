@@ -39,3 +39,9 @@ mod 'profile',
   :git => 'https://github.com/mafitconsulting/puppet-profile.git',
   :ref => 'master'
 
+mod 'nginx',
+  :git => 'https://github.com/mafitconsulting/puppet-nginx.git',
+  :ref => 'production'
+
+
+
