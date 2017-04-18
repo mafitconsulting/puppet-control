@@ -34,11 +34,11 @@ mod 'ntp',
 
 mod 'role',
   :git => 'https://github.com/mafitconsulting/puppet-role.git',
-  :ref => 'master'
+  :ref => 'production'
 
 mod 'profile',
   :git => 'https://github.com/mafitconsulting/puppet-profile.git',
-  :ref => 'master'
+  :ref => 'production'
 
 mod 'nginx',
   :git => 'https://github.com/mafitconsulting/puppet-nginx.git',
