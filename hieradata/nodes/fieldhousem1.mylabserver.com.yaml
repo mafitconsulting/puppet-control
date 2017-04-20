@@ -1,0 +1,8 @@
+---
+profile::nginx::vhosts:
+ - 'fqdn': 'fieldhousem1.mylabserver.com'
+   'port': 80
+   'server_aliases': ''
+ - 'fqdn': 'fieldhousem1b.mylabserver.com'
+   'port': 80
+   'server_aliases': 'fieldhousem1b.mylabserver.com'
