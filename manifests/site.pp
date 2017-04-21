@@ -12,7 +12,6 @@
 ## Active Configurations ##
 
 # Disable filebucket by default for all File resources:
-#https://docs.puppet.com/pe/2015.3/release_notes.html#filebucket-resource-no-longer-created-by-default
 File { backup => false }
 
 # DEFAULT NODE
@@ -29,4 +28,25 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
+  notify { "This is the default node!": }
+}
+
+node 'fieldhousem1.mylabserver.com' {
+  notify { 'test-message-for-fieldhousem1':
+     message => 'This is fieldhouse using node definition',
+  }
+}
+
+node 'fieldhousem3.mylabserver.com' {
+  notify { 'This matches the node name': }
+  #include ntp
+}
+
+node /^fieldhousem\d.mylabserver.com$/ {
+  notify { "This is a regex node": }
+}
+
+node 'fieldhousem2.mylabserver.com' {
+  include pe_repo::platform::el_6_x86_64
+  include pe_repo::platform::ubuntu_1204_amd64
 }
