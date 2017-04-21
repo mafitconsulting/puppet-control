@@ -24,13 +24,6 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node default {
-  # This is where you can declare classes for all nodes.
-  # Example:
-  #   class { 'my_class': }
-  notify { "This is the default node!": }
-}
-
 node 'fieldhousem1.mylabserver.com' {
   notify { 'test-message-for-fieldhousem1':
      message => 'This is fieldhouse using node definition',
@@ -50,3 +43,11 @@ node 'fieldhousem2.mylabserver.com' {
   include pe_repo::platform::el_6_x86_64
   include pe_repo::platform::ubuntu_1204_amd64
 }
+
+node default {
+  # Using hiera as a ENC
+  # Example:
+  #   class { 'my_class': }
+  hiera_include('classes')
+}
+

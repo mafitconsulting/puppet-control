@@ -6,3 +6,5 @@ profile::nginx::vhosts:
  - 'fqdn': 'fieldhousem1b.mylabserver.com'
    'port': 80
    'server_aliases': 'fieldhousem1b.mylabserver.com'
+classes:
+  - profile::nginx
