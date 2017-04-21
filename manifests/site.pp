@@ -24,25 +24,6 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node 'fieldhousem1.mylabserver.com' {
-  notify { 'test-message-for-fieldhousem1':
-     message => 'This is fieldhouse using node definition',
-  }
-}
-
-node 'fieldhousem3.mylabserver.com' {
-  notify { 'This matches the node name': }
-  #include ntp
-}
-
-node /^fieldhousem\d.mylabserver.com$/ {
-  notify { "This is a regex node": }
-}
-
-node 'fieldhousem2.mylabserver.com' {
-  include pe_repo::platform::el_6_x86_64
-  include pe_repo::platform::ubuntu_1204_amd64
-}
 
 node default {
   # Using hiera as a ENC
