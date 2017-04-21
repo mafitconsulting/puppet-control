@@ -30,7 +30,7 @@ mod 'ssh',
 
 mod 'ntp',
   :git => 'https://github.com/mafitconsulting/puppet-ntp.git',
-  :ref => 'master'
+  :ref => 'production'
 
 mod 'role',
   :git => 'https://github.com/mafitconsulting/puppet-role.git',
