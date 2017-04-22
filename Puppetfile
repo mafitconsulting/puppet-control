@@ -44,4 +44,9 @@ mod 'nginx',
   :ref => 'master'
 
 
+mod 'tivolilfa',
+  :git => 'https://github.com/mafitconsulting/tivolilfa.git',
+  :ref => 'development'
+
+
 
