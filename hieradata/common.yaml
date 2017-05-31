@@ -1,6 +1,6 @@
 ---
 message: "This node is using common data"
-profile::ntp::ntp_server:
+profile::ntp::ntp_servers:
   - 0.ubuntu.pool.org
   - 1.ubuntu.pool.org
   - 2.ubuntu.pool.org
