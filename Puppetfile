@@ -29,7 +29,7 @@ mod 'ssh',
 
 mod 'ntp',
   :git => 'https://github.com/mafitconsulting/puppet-ntp.git',
-  :ref => 'production'
+  :ref => 'development'
 
 mod 'role',
   :git => 'https://github.com/mafitconsulting/puppet-role.git',
@@ -42,7 +42,6 @@ mod 'profile',
 mod 'nginx',
   :git => 'https://github.com/mafitconsulting/puppet-nginx.git',
   :ref => 'master'
-
 
 mod 'tivolilfa',
   :git => 'https://github.com/mafitconsulting/tivolilfa.git',
