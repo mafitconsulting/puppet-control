@@ -5,6 +5,7 @@ forge "http://forge.puppetlabs.com"
 mod "puppetlabs/inifile",      '1.5.0'
 mod "puppetlabs/stdlib",       '4.11.0'
 mod "puppetlabs/concat",       '2.1.0'
+mod 'puppetlabs-ntp',          '6.2.0'
 mod "puppetlabs/java",         '1.6.0'
 mod "puppet/selinux",          '0.8.0'
 mod "puppetlabs/apt",          '2.3.0'
@@ -26,10 +27,6 @@ mod "garethr/docker",          '5.3.0'
 mod 'ssh',
   :git => 'https://github.com/mafitconsulting/puppet-ssh.git',
   :ref => 'master'
-
-mod 'ntp',
-  :git => 'https://github.com/mafitconsulting/puppet-ntp.git',
-  :ref => 'development'
 
 mod 'role',
   :git => 'https://github.com/mafitconsulting/puppet-role.git',
