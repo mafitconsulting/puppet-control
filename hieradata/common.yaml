@@ -1,6 +1,6 @@
 ---
 message: "This node is using common data"
-profile::ntp::ntp_servers:
+profile::base::ntp_servers:
   - 0.ubuntu.mafitconsulting.org
   - 1.ubuntu.mafitconsulting.org
   - 2.ubuntu.mafitconsulting.org
