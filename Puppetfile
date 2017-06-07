@@ -45,5 +45,10 @@ mod 'tivolilfa',
   :git => 'https://github.com/mafitconsulting/tivolilfa.git',
   :ref => 'development'
 
+mod 'webdev',
+  :git => 'https://github.com/mafitconsulting/webdev.git',
+  :ref => 'development'
+
+
 
 
