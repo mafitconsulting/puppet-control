@@ -18,11 +18,9 @@ profile::apache::apache_vhost_servers:
 
 profile::webpage::create_index_file:
   fieldhousem1.mylabserver.com:
-    ensure: 'file'
     name: '/var/www/fieldhousem1.mylabserver.com/index.html'
     content: 'This is a test for fieldhousem1.mylabserver.com'
   fieldhousem2.mylabserver.com:
-    ensure: 'file'
     name: '/var/www/fieldhousem2.mylabserver.com/index.html'
     content: 'This is a test for fieldhousem2.mylabserver.com'
 
