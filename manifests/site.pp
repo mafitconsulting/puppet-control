@@ -29,6 +29,5 @@ node default {
   # Using hiera as a ENC
   # Example:
   #   class { 'my_class': }
-  hiera_include('classes')
 }
 
