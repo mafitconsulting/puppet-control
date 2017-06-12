@@ -24,5 +24,15 @@ profile::webpage::create_index_file:
     filename: '/var/www/fieldhousem2.mylabserver.com/index.html'
     content: 'This is a test for fieldhousem2.mylabserver.com'
 
-
+profile::webpage::create_users:
+  mark:
+    username: mark
+    uid: '1330'
+    gid: 'admin'
+    groups: 'admin'
+  catherine:
+    username: catherine
+    uid: '1330'
+    gid: 'admin'
+    groups: 'admin'
 
