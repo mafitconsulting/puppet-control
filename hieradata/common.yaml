@@ -32,7 +32,7 @@ profile::webusers::create_users:
     groups: 'admin'
   catherine:
     username: catherine
-    uid: '1330'
+    uid: '1331'
     gid: 'admin'
     groups: 'admin'
 
